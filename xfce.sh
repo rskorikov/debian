@@ -2,7 +2,7 @@
 
 # Default packages are for the configuration and corresponding .config folders
 # Install packages after installing base Debian with no GUI.
-# Choose the options by commenting/uncommenting with #-sign
+# Choose the options by commenting/uncommenting with '#'-sign.
 
 # xorg display server installation
 sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
