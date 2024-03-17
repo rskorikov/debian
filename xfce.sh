@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Default packages are for the configuration and corresponding .config folders
-# Install packages after installing base Debian with no GUI
+# Install packages after installing base Debian with no GUI.
+# Choose the options by commenting/uncommenting with #-sign
 
 # xorg display server installation
 sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
@@ -10,7 +11,7 @@ sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
 sudo apt install -y build-essential 
 
 # Microcode for Intel/AMD 
-# sudo apt install -y amd64-microcode
+sudo apt install -y amd64-microcode
 sudo apt install -y intel-microcode 
 
 #XFCE packages
@@ -36,8 +37,8 @@ sudo apt install -y neofetch htop
 # alias ls='exa -al --long --header --color=always --group-directories-first' 
 sudo apt install -y exa
 
-# Printing and bluetooth (if needed)
-sudo apt install -y cups
+# Printing, scanner and bluetooth (if needed)
+sudo apt install -y cups simplescan
 sudo apt install -y bluez blueman
 
 sudo systemctl enable bluetooth
