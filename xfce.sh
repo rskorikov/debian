@@ -38,7 +38,7 @@ sudo apt install -y neofetch htop
 sudo apt install -y exa
 
 # Printing, scanner and bluetooth (if needed)
-sudo apt install -y cups simplescan
+sudo apt install -y cups simple-scan
 sudo apt install -y bluez blueman
 
 sudo systemctl enable bluetooth
