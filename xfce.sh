@@ -46,7 +46,7 @@ sudo systemctl enable cups
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
 # sudo apt install -y micro
-sudo apt install -y vim
+#sudo apt install -y vim
 
 # Install fonts
 sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
