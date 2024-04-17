@@ -11,7 +11,7 @@ sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
 sudo apt install -y build-essential 
 
 # Microcode for Intel/AMD 
-sudo apt install -y amd64-microcode
+#sudo apt install -y amd64-microcode
 sudo apt install -y intel-microcode 
 
 #XFCE packages
