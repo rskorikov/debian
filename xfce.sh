@@ -11,8 +11,8 @@ sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
 sudo apt install -y build-essential 
 
 # Microcode for Intel/AMD 
-#sudo apt install -y amd64-microcode
-sudo apt install -y intel-microcode 
+sudo apt install -y amd64-microcode
+#sudo apt install -y intel-microcode 
 
 #XFCE packages
 sudo apt install -y xfce4 xfce4-goodies
@@ -26,8 +26,11 @@ sudo apt install -y dialog mtools acpi acpid gvfs-backends
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
+# Networking etc
+sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
+
 # Sound packages (pulseaudio installed prior)
-sudo apt install -y alsa-utils volumeicon-alsa
+sudo apt install -y pulseaudio alsa-utils volumeicon-alsa
 
 # Neofetch/HTOP
 sudo apt install -y neofetch htop
@@ -38,7 +41,7 @@ sudo apt install -y neofetch htop
 sudo apt install -y exa
 
 # Printing, scanner and bluetooth (if needed)
-sudo apt install -y cups simple-scan
+sudo apt install -y cups simple-scan system-config-printer
 sudo apt install -y bluez blueman
 
 sudo systemctl enable bluetooth
@@ -51,10 +54,12 @@ sudo systemctl enable cups
 # Install fonts
 sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
 
+# PDF 
+sudo apt install -y  evince pdfarranger
 
 # Install LightDM GTK Greeter Settings (lightdm,lightdm-gtk-greeter installs with xfce)
 
-sudo apt install -y lightdm-gtk-greeter-settings
+sudo apt install -y lightdm-gtk-greeter-settings mugshot slick-greeter
 sudo systemctl enable lightdm
 
 sudo apt autoremove
