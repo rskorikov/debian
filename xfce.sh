@@ -42,7 +42,7 @@ sudo apt install -y exa
 
 # Printing, scanner and bluetooth (if needed)
 sudo apt install -y cups simple-scan system-config-printer
-sudo apt install -y bluez blueman
+sudo apt install -y bluez blueman bluez-firmware
 
 sudo systemctl enable bluetooth
 sudo systemctl enable cups
@@ -52,7 +52,7 @@ sudo systemctl enable cups
 #sudo apt install -y vim
 
 # Install fonts
-sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
+sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus fonts-noto-color-emoji
 
 # PDF 
 sudo apt install -y  evince pdfarranger
@@ -61,6 +61,10 @@ sudo apt install -y  evince pdfarranger
 
 sudo apt install -y lightdm-gtk-greeter-settings mugshot slick-greeter
 sudo systemctl enable lightdm
+
+#Flatpak support
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 sudo apt autoremove
 
