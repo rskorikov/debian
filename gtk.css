@@ -1,0 +1,12 @@
+.xfce4-panel#XfcePanelWindow {
+   border-bottom-left-radius: 9px;
+   border-bottom-right-radius: 9px;
+   border-top-left-radius: 9px;
+   border-top-right-radius: 9px;
+}
+/* Comment!!! Workspace Switcher buttons customization */
+.xfce4-panel widget grid button {
+font-family: 'JetBrainsMono Nerd Font';
+font-size: 20px;
+padding: 0 10px;
+}
