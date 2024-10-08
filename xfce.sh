@@ -30,7 +30,9 @@ sudo systemctl enable acpid
 sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
 
 # Sound packages (pulseaudio installed prior)
-sudo apt install -y pulseaudio alsa-utils volumeicon-alsa
+# sudo apt install -y pulseaudio alsa-utils volumeicon-alsa
+sudo apt install -y wireplumber pipewire-media-session-
+sudo apt install -y alsa-utils volumeicon-alsa
 
 # Neofetch/HTOP
 sudo apt install -y neofetch htop
